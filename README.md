@@ -2,7 +2,7 @@
 
 A basic Java program to implement a Student Management System for a school/college without a GUI.
 
-**Features: **
+***Features:***
 
 Login as a Student or as an Admin.
 
