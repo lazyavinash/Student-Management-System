@@ -1,0 +1,55 @@
+**Create Tables in SQL Plus as given below**
+
+=================
+admin;
+=================
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ADMIN_NAME                                         VARCHAR2(40)
+ ADMIN_CONTACT                                      VARCHAR2(10)
+ ADMIN_USERNAME                            NOT NULL VARCHAR2(40)
+ ADMIN_PASSWORD                            NOT NULL VARCHAR2(40)
+
+=================
+student
+=================
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ STUDENT_ID                                NOT NULL NUMBER(5)
+ STUDENT_NAME                              NOT NULL VARCHAR2(40)
+ STUDENT_DOB                                        DATE
+
+=================
+enroll
+=================
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ STUDENT_ID                                         NUMBER(6)
+ STUDENT_NAME                                       VARCHAR2(40)
+ STUDENT_DOB                                        DATE
+ COURSE_ID                                          NUMBER(6)
+ COURSE_NAME                                        VARCHAR2(40)
+ COURSE_DURATION                                    VARCHAR2(30)
+ COURSE_PRICE                                       FLOAT(7)
+ DATE_OF_ENROLLMENT                                 DATE
+
+=================
+course
+=================
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ COURSE_ID                                 NOT NULL NUMBER(6)
+ COURSE_NAME                               NOT NULL VARCHAR2(40)
+ COURSE_DURATION                                    VARCHAR2(10)
+ COURSE_PRICE                                       FLOAT(6)
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+**Additional Information**
+
+* I have used JDBC to connect my database with my Java code
+* Do the necessary changes in dao code to run successfully in your system 
